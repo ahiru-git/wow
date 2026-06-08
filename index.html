@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>日本全国 気候データ可視化システム</title>
+    <link rel="stylesheet" href="課題.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+
+   <div class="container">
+        <h1>日本全国 県庁所在地気候データ解析 (2006年〜2025年)</h1>
+        <p class="description">
+            47都道府県の県庁所在地における月別の気象統計。年・月・表示する気温の種類（平均/最高/最低）を切り替えて日本地図上にグラデーションで表示します。
+        </p>
+
+        <div class="radio-container">
+            <label><input type="radio" name="dataType" value="avg" checked> 月平均気温</label>
+            <label><input type="radio" name="dataType" value="max"> 月最高気温</label>
+            <label><input type="radio" name="dataType" value="min"> 月最低気温</label>
+        </div>
+        
+        <div class="slider-container">
+            <div class="slider-box">
+                <label for="yearSlider">表示する年: <span id="yearDisplay">2025</span>年</label>
+                <input type="range" id="yearSlider" min="2006" max="2025" value="2025" step="1">
+            </div>
+
+            <div class="slider-box">
+                <label for="monthSlider">表示する月: <span id="monthDisplay">12</span>月</label>
+                <input type="range" id="monthSlider" min="1" max="12" value="12" step="1">
+            </div>
+        </div>
+        
+        <div id="chart" style="width: 100%; height: 800px; margin: 0 auto;"></div>
+
+   </div>
+
+   <script src="課題.js"></script>
+</body>
+</html>
