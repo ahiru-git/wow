@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    background-color: #ffffff;
+    color: #121b2a;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    background-color: #092360;
+    color: #ffffff;
+    padding: 16px 24px;
+    box-shadow: 0 4px 6px -1px rgba(78, 74, 74, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 14px;
+    color: #fafafa;
+    margin-top: 4px;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 80px);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 76, 255, 0);
+    border: 1px solid #a3bee2;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.map-box {
+    flex: 1.3;
+}
+
+#map-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.chart-box {
+    flex: 1.0;
+    overflow-y: auto;
+}
+
+.stat-values {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+#stat-prefecture {
+    font-size: 21px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+#stat-total {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#stat-vacant {
+    font-size: 19px;
+    color: #ef4444;
+    font-weight: bold;
+}

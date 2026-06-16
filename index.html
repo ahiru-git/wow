@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本国内の空き家分布可視化</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <h1>日本国内における現在の空き家分布</h1>
+        <div class="subtitle">都道府県別の空き家数・総住宅数データ</div>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="card map-box">
+            <div id="map-container"></div>
+        </div>
+
+        <div class="card chart-box">
+            <h2>選択された都道府県のデータ</h2>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #e2e8f0;">
+            
+           <div class="stat-values">
+                <p><strong>都道府県名:</strong> <span id="stat-prefecture">--</span></p>
+                <p><strong>総住宅数:</strong> <span id="stat-total">--</span> 戸</p>
+                <p><strong>空き家数:</strong> <span id="stat-vacant">--</span> 戸</p>
+            </div>
+
+            
+        </div>
+
+    </main>
+
+    <script src="home.js"></script>
+</body>
+</html>
